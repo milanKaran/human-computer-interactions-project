@@ -1,0 +1,6 @@
+Tab Unselected = (145,232,255) ~gradient
+Tab Selected   = (66,155,179)  ~gradient
+BackGround     = (228,166,107) ~solid
++ button       = (68.197,19)   ~solid
+- button       = (214,31,31)   ~solid
+Tab Grid Bg    = (91,77,77)    ~solid

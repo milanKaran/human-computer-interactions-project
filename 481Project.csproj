@@ -1,0 +1,1096 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{431D8429-A111-49E1-BB9B-C0FB0678433F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>_481Project</RootNamespace>
+    <AssemblyName>481Project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.2.2.920, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.2.2\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=3.0.1.920, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.3.0.1\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="itemInfo.xaml.cs">
+      <DependentUpon>itemInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainScreen.xaml.cs">
+      <DependentUpon>MainScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="overlayTexts.xaml.cs">
+      <DependentUpon>overlayTexts.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario1\itemInfoJohn.xaml.cs">
+      <DependentUpon>itemInfoJohn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario1\PlacedOrderJohn.xaml.cs">
+      <DependentUpon>PlacedOrderJohn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario1\ReviewOrderJohn.xaml.cs">
+      <DependentUpon>ReviewOrderJohn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ReviewOrderFull.xaml.cs">
+      <DependentUpon>ReviewOrderFull.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario3\MainScreenThomas.xaml.cs">
+      <DependentUpon>MainScreenThomas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario3\CancelledOrderThomas.xaml.cs">
+      <DependentUpon>CancelledOrderThomas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario3\ReviewOrderThomas.xaml.cs">
+      <DependentUpon>ReviewOrderThomas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario3\WaiterNotificationThomas.xaml.cs">
+      <DependentUpon>WaiterNotificationThomas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4\WaiterNotification.xaml.cs">
+      <DependentUpon>WaiterNotification.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4\TwoMainScreenKaren.xaml.cs">
+      <DependentUpon>TwoMainScreenKaren.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4\MainScreenKaren.xaml.cs">
+      <DependentUpon>MainScreenKaren.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4\PlacedOrderKaren.xaml.cs">
+      <DependentUpon>PlacedOrderKaren.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4\TworeviewOrderKaren.xaml.cs">
+      <DependentUpon>TworeviewOrderKaren.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4\reviewOrderKaren.xaml.cs">
+      <DependentUpon>reviewOrderKaren.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario4\TwoWelcomeScreenKaren.xaml.cs">
+      <DependentUpon>TwoWelcomeScreenKaren.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario6\MainScreenJack.xaml.cs" />
+    <Compile Include="Scenario6\CancelItemJack.xaml.cs">
+      <DependentUpon>CancelItemJack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario6\PlacedOrderJack.xaml.cs">
+      <DependentUpon>PlacedOrderJack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario6\PostReviewOrderFullJack.xaml.cs">
+      <DependentUpon>PostReviewOrderFullJack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario6\ReviewOrderFullJack.xaml.cs">
+      <DependentUpon>ReviewOrderFullJack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario6\ReviewOrderJack.xaml.cs">
+      <DependentUpon>ReviewOrderJack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TesterScreen.xaml.cs">
+      <DependentUpon>TesterScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WelcomeScreen.xaml.cs">
+      <DependentUpon>WelcomeScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Scenario1\MainscreenJohn.xaml.cs">
+      <DependentUpon>MainscreenJohn.xaml</DependentUpon>
+    </Compile>
+    <Page Include="itemInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="MainScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="overlayTexts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario1\itemInfoJohn.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario1\PlacedOrderJohn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario1\ReviewOrderJohn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ReviewOrderFull.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario3\MainScreenThomas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario3\CancelledOrderThomas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario3\ReviewOrderThomas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario3\WaiterNotificationThomas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario4\WaiterNotification.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario4\TwoMainScreenKaren.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario4\MainScreenKaren.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario4\PlacedOrderKaren.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario4\TworeviewOrderKaren.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario4\reviewOrderKaren.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario4\TwoWelcomeScreenKaren.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario6\MainScreenJack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario6\CancelItemJack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario6\PlacedOrderJack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario6\PostReviewOrderFullJack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario6\ReviewOrderFullJack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Scenario6\ReviewOrderJack.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TesterScreen.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WelcomeScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Scenario1\MainscreenJohn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\logo_cpsc481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\burger_SAMPLE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\sample_advertisement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\infoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\largeAdvertisement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\greenCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\emptyCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\waiterWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="BlackForestSheetGF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="dessert2.jpeg" />
+    <Resource Include="dessert3.jpg" />
+    <Resource Include="dessert4.jpg" />
+    <Resource Include="dessert5.jpg" />
+    <Resource Include="dessert6.jpg" />
+    <Resource Include="dessert7.jpg" />
+    <Resource Include="dessert8.jpg" />
+    <Resource Include="Desserts_image.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\burger_SAMPLE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\emptyCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\greenCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\infoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\largeAdvertisement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\logo_cpsc481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\sample_advertisement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\waiterWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\BlackForestSheetGF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icons\shrimpspaghetti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\burger_SAMPLE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\emptyCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\greenCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\infoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\largeAdvertisement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\logo_cpsc481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\sample_advertisement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\waiterWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\ShrimpFries.jpg" />
+    <Resource Include="Scenario6\ShrimpMilkshake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\waiterWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\burger_SAMPLE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\emptyCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\greenCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\halfiax-donair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\infoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\largeAdvertisement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\logo_cpsc481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\sample_advertisement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\waiterWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\BlackForestSheetGF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\dessert2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\dessert5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\ShrimpMilkshake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\ShrimpFries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\AppleJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\MountainDew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\OrangeJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\PineappleJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\Lemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\LargeLemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario1\icons\MamasCake.jpg" />
+    <Resource Include="Scenario1\icons\GumpsCake.jpg" />
+    <Resource Include="Scenario1\icons\MamasClassicCake.jpg" />
+    <Resource Include="Scenario1\icons\PapasCake.jpg" />
+    <Resource Include="Scenario1\icons\JuniorChocolate.jpg" />
+    <Resource Include="Scenario1\icons\ShrimpIceCream.jpg" />
+    <Resource Include="Scenario1\icons\MashedPotatos.jpg" />
+    <Resource Include="Scenario1\icons\Pasta.jpg" />
+    <Resource Include="Scenario1\icons\PopcornShrimp.jpg" />
+    <Resource Include="Scenario1\icons\Quinoa.jpg" />
+    <Resource Include="Scenario1\icons\RicePotato.jpg" />
+    <Resource Include="Scenario1\icons\SaucedRice.jpg" />
+    <Resource Include="Scenario1\icons\Shrimp-Bread.png" />
+    <Resource Include="Scenario1\icons\ShrimpOatsjpg.jpg" />
+    <Resource Include="Scenario1\icons\JuniorsBurger.jpg" />
+    <Resource Include="Scenario1\icons\KrabBurger.jpg" />
+    <Resource Include="Scenario1\icons\Mama%27sFavourite.jpg" />
+    <Resource Include="Scenario1\icons\MamasBurger.png" />
+    <Resource Include="Scenario1\icons\MamasClassicBurger.jpg" />
+    <Resource Include="Scenario1\icons\Papa%27Burger.png" />
+    <Resource Include="Scenario1\icons\SalmonBurger.jpg" />
+    <Resource Include="Scenario1\icons\SeafoodBurger.jpg" />
+    <Resource Include="Scenario1\icons\CodFish.jpg" />
+    <Resource Include="Scenario1\icons\Butter Buiscuit.jpg" />
+    <Resource Include="Scenario1\icons\mackerelLunch.jpg" />
+    <Resource Include="Scenario1\icons\OvenRoastedShrimp.jpg" />
+    <Resource Include="Scenario1\icons\PitaShrimp.jpg" />
+    <Resource Include="Scenario1\icons\ShrimpBurrito.jpg" />
+    <Resource Include="Scenario1\icons\ShrimpDonair.jpg" />
+    <Resource Include="Scenario1\icons\ShrimpLasagna.jpg" />
+    <Resource Include="Scenario1\icons\shrimploaf.jpg" />
+    <Resource Include="Scenario1\icons\ShrimpSalmon.jpg" />
+    <Resource Include="Scenario1\icons\Shrimp_broccoli.jpg" />
+    <Resource Include="Scenario1\icons\ChocolateMilk.jpg" />
+    <Resource Include="Scenario1\icons\Coke.jpg" />
+    <Resource Include="Scenario1\icons\FantaDrink.jpg" />
+    <Resource Include="Scenario1\icons\BeefBurger.jpg" />
+    <Resource Include="Scenario1\icons\BeyondTheMeat.jpg" />
+    <Resource Include="Scenario1\icons\ChickenSalmonBurgers.jpg" />
+    <Resource Include="Scenario1\icons\ButteredPotatoejpg.jpg" />
+    <Resource Include="Scenario1\icons\CornBread.jpg" />
+    <Resource Include="Scenario1\icons\ChocolateCake.jpg" />
+    <Resource Include="Scenario1\icons\FudgeShrimpCake.jpg" />
+    <Resource Include="Scenario1\icons\BubasCake.jpg" />
+    <Resource Include="Scenario1\icons\Barley.jpg" />
+    <Resource Include="Scenario1\icons\Gingerale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\AppleJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Barley.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\BeefBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\BeyondTheMeat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\BlackForestSheetGF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\BubasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Butter Buiscuit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ButteredPotatoejpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ChickenSalmonBurgers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ChocolateCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ChocolateMilk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\CodFish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Coke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\CornBread.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\dessert2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\dessert5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\FantaDrink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\FudgeShrimpCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Gingerale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\GumpsCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\JuniorChocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\JuniorsBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\KrabBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\LargeLemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Lemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\mackerelLunch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Mama%27sFavourite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\MamasBurger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\MamasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\MamasClassicBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\MamasClassicCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\MashedPotatos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\MountainDew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\OrangeJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\OvenRoastedShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Papa%27Burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\PapasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Pasta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\PineappleJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\PitaShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\PopcornShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Quinoa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\RicePotato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\SalmonBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\SaucedRice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\SeafoodBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Shrimp-Bread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\Shrimp_broccoli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ShrimpBurrito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ShrimpDonair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ShrimpFries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ShrimpIceCream.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ShrimpLasagna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\shrimploaf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ShrimpMilkshake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ShrimpOatsjpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario4\icons\ShrimpSalmon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\AppleJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Barley.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\BeefBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\BeyondTheMeat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\BlackForestSheetGF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\BubasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\burger_SAMPLE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Butter Buiscuit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ButteredPotatoejpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ChickenSalmonBurgers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ChocolateCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ChocolateMilk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\CodFish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Coke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\CornBread.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\dessert2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\dessert5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\emptyCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\FantaDrink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\FudgeShrimpCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Gingerale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\greenCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\GumpsCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\infoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\JuniorChocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\JuniorsBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\KrabBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\largeAdvertisement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\LargeLemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Lemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\logo_cpsc481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\mackerelLunch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Mama%27sFavourite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\MamasBurger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\MamasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\MamasClassicBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\MamasClassicCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\MashedPotatos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\MountainDew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\OrangeJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\OvenRoastedShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Papa%27Burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\PapasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Pasta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\PineappleJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\PitaShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\PopcornShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Quinoa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\RicePotato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\SalmonBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\sample_advertisement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\SaucedRice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\SeafoodBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Shrimp-Bread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\Shrimp_broccoli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ShrimpBurrito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ShrimpDonair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ShrimpFries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ShrimpIceCream.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ShrimpLasagna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\shrimploaf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ShrimpMilkshake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ShrimpOatsjpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\ShrimpSalmon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario3\icons\waiterWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\BlackForestSheetGF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\shrimpspaghetti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\AppleJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Barley.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\BeefBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\BeyondTheMeat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\BlackForestSheetGF.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\BubasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\burger_SAMPLE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Butter Buiscuit.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ButteredPotatoejpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ChickenSalmonBurgers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ChocolateCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ChocolateMilk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\CodFish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Coke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\CornBread.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\dessert2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\dessert5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\emptyCircle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\FantaDrink.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\FudgeShrimpCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Gingerale.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\greenCheck.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\GumpsCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\infoIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\JuniorChocolate.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\JuniorsBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\KrabBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\largeAdvertisement.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\LargeLemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Lemonade.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\logo_cpsc481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\mackerelLunch.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Mama%27sFavourite.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\MamasBurger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\MamasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\MamasClassicBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\MamasClassicCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\MashedPotatos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\milk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\MountainDew.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\OrangeJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\OvenRoastedShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Papa%27Burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\PapasCake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Pasta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\PineappleJuice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\PitaShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\PopcornShrimp.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Quinoa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\RicePotato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\SalmonBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\sample_advertisement.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\SaucedRice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\SeafoodBurger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Shrimp-Bread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\Shrimp_broccoli.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ShrimpBurrito.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ShrimpDonair.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ShrimpFries.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ShrimpIceCream.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ShrimpLasagna.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\shrimploaf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ShrimpMilkshake.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ShrimpOatsjpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\ShrimpSalmon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\waiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scenario6\icons\icons\waiterWhite.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.3.0.1\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.0.1\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.3.0.1\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.3.0.1\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,1913 @@
+﻿<Window x:Class="_481Project.MainScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_481Project"
+        mc:Ignorable="d"
+        Title="mainScreen" Height="450" Width="800">
+    <Grid Background="#FFE4A66B">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Frame Content="" HorizontalAlignment="Left" Height="363" Margin="0,27,0,0" VerticalAlignment="Top" Width="792"/>
+        <TextBlock HorizontalAlignment="Left" Margin="343,6,0,0" TextWrapping="Wrap" Text="MAMA'S SHRIMP" VerticalAlignment="Top" Height="16" Width="148" FontFamily="Freestyle Script" FontSize="20" Foreground="Black" FontWeight="Bold"/>
+        <Grid HorizontalAlignment="Left" Height="100" Margin="213,112,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock HorizontalAlignment="Left" Margin="696,403,0,0" TextWrapping="Wrap" Text="Total: $" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="739,403,0,-16" TextWrapping="Wrap" Text="00" VerticalAlignment="Top"/>
+        <TabControl HorizontalAlignment="Left" Height="376" Margin="0,27,0,0" VerticalAlignment="Top" Width="792">
+            <TabItem x:Name="drinksTab" Header="Drinks" Margin="0,0,-77,-2" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic" BorderBrush="#FFACACAC">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF91E8FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF5B4D4D">
+                    <ScrollBar x:Name="Scroll" HorizontalAlignment="Left" Margin="769,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.447,0.425"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,13,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,13,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,13,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,13,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,13,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,101,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,13,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,101,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,13,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,13,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,13,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,101,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,101,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,13,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,130,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-8,0,0"
+                                        Height="40"
+                                        FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-4,0,0"
+                                        Height="40"
+                                        FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-8,0,0"
+                                        Height="40"
+                                        FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-4,0,0"
+                                        Height="40"
+                                        FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,130,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,130,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,130,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,130,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,218,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,130,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,218,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,130,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-8,0,0"
+                                        Height="40"
+                                        FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-4,0,0"
+                                        Height="40"
+                                        FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,130,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,130,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,218,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,218,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-8,0,0"
+                                        Height="40"
+                                        FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-4,0,0"
+                                        Height="40"
+                                        FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,130,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,249,0,-11"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-8,0,0"
+                                        Height="40"
+                                        FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-4,0,0"
+                                        Height="40"
+                                        FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-8,0,0"
+                                        Height="40"
+                                        FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-4,0,0"
+                                        Height="40"
+                                        FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,249,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,249,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,249,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,249,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,337,679,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,249,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,337,297,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,249,0,-11" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-8,0,0"
+                                        Height="40"
+                                        FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-4,0,0"
+                                        Height="40"
+                                        FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,249,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,249,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,337,107,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,337,485,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-8,0,0"
+                                        Height="40"
+                                        FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                                        HorizontalAlignment="Center"                                           
+                                        Margin="0,-4,0,0"
+                                        Height="40"
+                                        FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,249,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="mainsTab" Header="Mains" Margin="76,0,-142,-2" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF91E8FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF5B4D4D">
+                    <Rectangle HorizontalAlignment="Left" Height="22" Margin="691,-54,0,0" Stroke="Black" VerticalAlignment="Top" Width="80"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,13,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,13,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,13,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,13,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,13,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,101,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,13,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,101,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,13,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,13,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,13,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,101,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,101,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,13,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,130,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,130,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,130,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,130,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,130,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,218,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,130,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,218,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,130,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,130,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,130,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,218,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,218,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,130,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,249,0,-11"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,249,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,249,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,249,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,249,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,337,679,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,249,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,337,297,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,249,0,-11" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,249,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,249,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,337,107,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,337,485,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,249,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <ScrollBar x:Name="Scroll_Copy" HorizontalAlignment="Left" Margin="769,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.447,0.425"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="burgersTab" Header="Burgers" Margin="141,0,-209,-2" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF91E8FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF5B4D4D">
+                    <ScrollBar HorizontalAlignment="Left" Margin="769,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.932,0.723"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,13,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,13,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,13,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,13,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,13,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,101,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,13,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,101,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,13,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,13,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,13,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,101,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,101,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,13,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,130,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,130,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,130,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,130,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,130,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,218,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,130,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,218,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,130,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,130,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,130,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,218,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,218,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,130,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,249,0,-11"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,249,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,249,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,249,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,249,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,337,679,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,249,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,337,297,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,249,0,-11" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,249,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,249,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,337,107,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,337,485,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,249,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="sidesTab" Header="Sides" Margin="208,0,-290,-3" FontFamily="Sitka Small" FontStyle="Italic" FontSize="16" BorderBrush="#FFACACAC" RenderTransformOrigin="0.5,0.5">
+                <TabItem.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.317"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TabItem.RenderTransform>
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF91E8FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF5B4D4D">
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,13,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,13,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,13,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,13,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,13,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,101,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,13,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,101,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,13,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,13,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,13,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,101,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,101,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,13,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,130,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,130,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,130,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,130,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,130,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,218,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,130,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,218,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,130,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,130,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,130,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,218,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,218,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,130,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,249,0,-11"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,249,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,249,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,249,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,249,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,337,679,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,249,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,337,297,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,249,0,-11" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,249,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,249,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,337,107,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,337,485,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,249,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <ScrollBar x:Name="Scroll_Copy1" HorizontalAlignment="Left" Margin="769,165,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.447,0.425"/>
+                </Grid>
+            </TabItem>
+            <TabItem x:Name="dessertTab" Header="Dessert" Margin="290,0,-367,-2" FontFamily="Sitka Small" FontSize="16" FontStyle="Italic" BorderBrush="#FFACACAC">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                        <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                        <GradientStop Color="#FF91E8FF" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+                <Grid Background="#FF5B4D4D">
+                    <ScrollBar HorizontalAlignment="Left" Margin="769,165,0,0" VerticalAlignment="Top"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,13,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,13,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,13,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,13,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,13,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,13,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,101,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,13,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,101,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,13,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,97,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,13,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,13,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,101,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,101,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,97,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,13,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,130,0,0" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,130,0,0"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,130,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,130,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,130,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,130,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,218,679,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,130,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,218,297,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,130,0,0" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,214,0,0" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,130,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,130,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,218,107,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,218,485,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,214,0,0" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,130,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="395,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="203,249,0,-11" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Image HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="172" Source="BlackForestSheetGF.jpg" Stretch="Fill" Margin="13,249,0,-11"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="13,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="165,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="395,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="545,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="531,249,219,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="203,249,461,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="13,249,653,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="151,249,601,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="91,337,679,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="395,249,269,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="122" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="473,337,297,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Image HorizontalAlignment="Left" Height="106" Margin="585,249,0,-11" VerticalAlignment="Top" Width="170" Source="BlackForestSheetGF.jpg" Stretch="Fill"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="585,333,0,-11" VerticalAlignment="Top" Width="20" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="733,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="721,249,31,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="34" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="585,249,81,0" TextWrapping="Wrap" Text="Chocolate Cake" VerticalAlignment="Top" Background="White" Height="18" Width="120" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="663,337,107,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="285,337,485,-11" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Background="White" Height="18" Width="16" Opacity="0.7" RenderTransformOrigin="7.625,12.938" FontFamily="Segoe UI" FontSize="14"/>
+                    <Button Content="" HorizontalAlignment="Left" Margin="203,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FFF9A5A5" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FFFFA0A0">
+                                    <TextBlock Text="-" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-8,0,0"
+                            Height="40"
+                            FontSize="25"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button Content="" HorizontalAlignment="Left" Margin="353,333,0,-11" VerticalAlignment="Top" Width="22" Height="22" Background="#FF68FF47" FontFamily="Segoe UI" FontSize="14">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Border CornerRadius="20" Background="#FF30D10D">
+                                    <TextBlock Text="+" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,-4,0,0"
+                            Height="40"
+                            FontSize="20"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="339,249,411,0" TextWrapping="Wrap" Text="$5.95" VerticalAlignment="Top" Background="White" Height="18" Width="36" Opacity="0.7" FontFamily="Segoe UI" FontSize="14"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Image HorizontalAlignment="Left" Height="27" Margin="65,0,0,0" VerticalAlignment="Top" Width="30" Source="icons/waiterWhite.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="icons/waiterWhite.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button Content="" HorizontalAlignment="Left" Margin="16,2,0,0" VerticalAlignment="Top" Width="25" Height="25" Background="White" RenderTransformOrigin="-3.5,1.706" BorderBrush="White" Click="ShowOverlay">
+            <Button.Template>
+                <ControlTemplate>
+                    <Border CornerRadius="20" Background="White" BorderBrush="Black" BorderThickness="1px">
+                        <TextBlock Text="i" Foreground="Black" 
+                            HorizontalAlignment="Center"                                           
+                            Margin="0,0,0,0"
+                            Height="40"
+                            FontSize="15" FontStyle="Italic"/>
+                    </Border>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+
+        <Button Content="Cancel Order" HorizontalAlignment="Left" Margin="568,4,0,0" VerticalAlignment="Top" Width="92" Background="#FFF50000" FontFamily="Sitka Heading" FontSize="10" FontWeight="Bold" FontStyle="Italic" Height="18"/>
+        <Button Content="Review Order" HorizontalAlignment="Left" Margin="672,4,0,0" VerticalAlignment="Top" Width="92" Background="#FF87B4AD" FontFamily="Sitka Heading" FontSize="10" FontWeight="Bold" FontStyle="Italic" Height="18"/>
+        <Button x:Name="overlaySplash" Content="" HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792" Opacity="0.5" Background="#FF66626E" Margin="-2,1,0,-1" Click="RemoveOverlay" />
+        <TextBlock x:Name="overlay3" HorizontalAlignment="Left" Margin="48,232,0,0" TextWrapping="Wrap" Text="Tap - and + to add items to your order" VerticalAlignment="Top" Height="34" Width="147" Foreground="#FF001DD4" Background="#CCFFFFFF"/>
+        <TextBlock x:Name="overlay2" HorizontalAlignment="Left" Margin="593,51,0,0" TextWrapping="Wrap" Text="Tap review order when ready to order" VerticalAlignment="Top" Height="32" Width="171" Foreground="#FF001DD4" Background="#CCFFFFFF"/>
+        <TextBlock x:Name="overlay4" HorizontalAlignment="Left" Margin="355,217,0,0" TextWrapping="Wrap" Text="To make special adjustments, tap the food image" VerticalAlignment="Top" Height="49" Width="109" Foreground="#FF001DD4" Background="#CCFFFFFF"/>
+        <TextBlock x:Name="overlay1" HorizontalAlignment="Left" Margin="100,14,0,0" TextWrapping="Wrap" Text="Tap waiter icon for any assistance" VerticalAlignment="Top" Height="18" Width="178" Foreground="#FF001DD4" Background="#CCFFFFFF"/>
+    </Grid>
+    
+</Window>

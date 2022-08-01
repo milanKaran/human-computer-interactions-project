@@ -1,0 +1,16 @@
+﻿<Window x:Class="_481Project.overlayTexts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_481Project"
+        mc:Ignorable="d"
+        Title="overlayTexts" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="30,192,0,0" TextWrapping="Wrap" Text="Tap - and + to add items to your order" VerticalAlignment="Top" Height="57" Width="171" Foreground="#FF001DD4"/>
+        <TextBlock HorizontalAlignment="Left" Margin="591,29,0,0" TextWrapping="Wrap" Text="Tap review order when ready to order" VerticalAlignment="Top" Height="57" Width="171" Foreground="#FF001DD4"/>
+        <TextBlock HorizontalAlignment="Left" Margin="311,213,0,0" TextWrapping="Wrap" Text="To make special adjustments, tap the food image" VerticalAlignment="Top" Height="57" Width="109" Foreground="#FF001DD4"/>
+        <TextBlock HorizontalAlignment="Left" Margin="72,29,0,0" TextWrapping="Wrap" Text="Tap waiter icon for any assistance" VerticalAlignment="Top" Height="28" Width="195" Foreground="#FF001DD4"/>
+
+    </Grid>
+</Window>
